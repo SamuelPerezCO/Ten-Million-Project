@@ -1,4 +1,5 @@
 from customtkinter import *
+from crud import *
 
 set_appearance_mode("dark")
 
@@ -13,20 +14,20 @@ app.grid_columnconfigure(0, weight=1)
 app.grid_columnconfigure(1, weight=3)
 
 
-def create_savings():
-    print("You just press create_savings")
+def btn_create_savings():
+    create_savings()
 
 
-def read_savings():
-    print("You just press read_savings")
+def btn_read_savings():
+    read_savings()
 
 
-def update_savings():
-    print("You just press update_savings")
+def btn_update_savings():
+    update_savings
 
 
-def delete_savings():
-    print("You just press delete_savings")
+def btn_delete_saving():
+    delete_savings()
 
 
 # ---------- LEFT SIDE (Title + Scroll) ----------
@@ -60,7 +61,7 @@ btn_create = CTkButton(
     hover_color="#4158D0",
     border_color="#0000FF",
     border_width=2,
-    command=create_savings
+    command=btn_create_savings
 )
 btn_create.place(relx=0.5, rely=0.2, anchor="center")
 
@@ -72,7 +73,7 @@ btn_read = CTkButton(
     hover_color="#4158D0",
     border_color="#0000FF",
     border_width=2,
-    command=read_savings
+    command=btn_read_savings
 )
 btn_read.place(relx=0.5, rely=0.4, anchor="center")
 
@@ -84,7 +85,7 @@ btn_update = CTkButton(
     hover_color="#4158D0",
     border_color="#0000FF",
     border_width=2,
-    command=update_savings
+    command=btn_update_savings
 )
 btn_update.place(relx=0.5, rely=0.6, anchor="center")
 
@@ -96,7 +97,7 @@ btn_delete = CTkButton(
     hover_color="#4158D0",
     border_color="#0000FF",
     border_width=2,
-    command=delete_savings
+    command=btn_delete_saving
 )
 btn_delete.place(relx=0.5, rely=0.8, anchor="center")
 
