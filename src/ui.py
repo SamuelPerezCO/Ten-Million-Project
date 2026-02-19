@@ -30,7 +30,6 @@ def btn_delete_saving():
     delete_savings()
 
 
-# ---------- LEFT SIDE (Title + Scroll) ----------
 left_container = CTkFrame(master=app, fg_color="transparent")
 left_container.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
@@ -49,7 +48,6 @@ left_frame = CTkScrollableFrame(
 left_frame.grid(row=1, column=0, sticky="nsew")
 
 
-# ---------- RIGHT SIDE ----------
 right_frame = CTkFrame(master=app, fg_color="transparent")
 right_frame.grid(row=0, column=1, sticky="nsew", padx=10, pady=10)
 
