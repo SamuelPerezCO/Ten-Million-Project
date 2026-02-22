@@ -99,25 +99,6 @@ btn_delete = CTkButton(
 )
 btn_delete.place(relx=0.5, rely=0.8, anchor="center")
 
-# label = CTkLabel(master=right_frame, text="Some Text...", font=("Arial", 20))
-# label.place(relx=0.5, rely=0.35, anchor="center")
-
-# combobox = CTkComboBox(
-#     master=right_frame,
-#     values=["option 1", "Option 2", "Option 3"],
-#     fg_color="#0093E9",
-#     border_color="#FBA7BE",
-#     dropdown_fg_color="#0093E9"
-# )
-# combobox.place(relx=0.5, rely=0.6, anchor="center")
-
-# entry = CTkEntry(
-#     master=right_frame,
-#     placeholder_text="How much are you going to save?",
-#     width=250
-# )
-# entry.place(relx=0.5, rely=0.7, anchor="center")
-
 label_version = CTkLabel(master=right_frame, text="Version 0.0.1", font=("Arial", 10))
 label_version.place(relx=0.99, rely=0.99, anchor="se")
 
